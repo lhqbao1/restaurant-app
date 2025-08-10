@@ -1,4 +1,4 @@
-import arrowBack from "../assets/icons/arrow-back.png";
+import arrowBack from "../../assets/icons/arrow-back.png";
 import arrowDown from "@/assets/icons/arrow-down.png";
 import arrowRight from "@/assets/icons/arrow-right.png";
 import bag from "@/assets/icons/bag.png";
@@ -40,6 +40,7 @@ import pizzaOne from "@/assets/images/pizza-one.png";
 import salad from "@/assets/images/salad.png";
 import success from "@/assets/images/success.png";
 import tomatoes from "@/assets/images/tomatoes.png";
+import {Offers} from "@/src/types/offers";
 
 export const CATEGORIES = [
     {
@@ -64,7 +65,7 @@ export const CATEGORIES = [
     },
 ];
 
-export const offers = [
+export const offers: Offers[] = [
     {
         id: 1,
         title: "SUMMER COMBO",
@@ -73,19 +74,19 @@ export const offers = [
     },
     {
         id: 2,
-        title: "BURGER BASH",
+        title: "BURGER",
         image: burgerTwo,
         color: "#DF5A0C",
     },
     {
         id: 3,
-        title: "PIZZA PARTY",
+        title: "PIZZA",
         image: pizzaOne,
         color: "#084137",
     },
     {
         id: 4,
-        title: "BURRITO DELIGHT",
+        title: "BURRITO",
         image: buritto,
         color: "#EB920C",
     },
