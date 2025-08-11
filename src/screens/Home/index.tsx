@@ -5,6 +5,7 @@ import {Offers} from "@/src/types/offers";
 import {Fragment} from "react";
 import cn from 'clsx'
 import {ArrowButton} from '../../components/button/button'
+import CartHeader from "@/src/components/header/cart-header";
 
 interface ListItemProps {
     item: Offers;
@@ -50,6 +51,10 @@ export default function Home() {
                data={offers}
                renderItem={renderItem}
                contentContainerStyle={{ padding: 16 }} // tương đương px-6
+               keyExtractor={(item) => item.id.toString()}
+               ListHeaderComponent={
+                   <CartHeader/>
+               }
            />
        </SafeAreaView>
     );

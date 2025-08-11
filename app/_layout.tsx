@@ -19,7 +19,7 @@ export default function RootLayout() {
     }, [fontsLoaded, error])
 
   return (
-      <Stack screenOptions={{ headerShown: true }}>
+      <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" options={{ title: "Home" }} />
           <Stack.Screen name="profile" options={{ title: "Profile" }} />
       </Stack>
